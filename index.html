@@ -1,0 +1,55 @@
+<!-- cadastro.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores - Lojas Brincos e Companhia</title>
+    <!-- Importação do framework W3.CSS e CSS complementar local -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-light-grey">
+    <main class="w3-container form-wrapper">
+        <article class="w3-card-4 w3-white form-card">
+            <header class="w3-container w3-teal">
+                <h2>Portal de Vagas</h2>
+            </header>
+            
+            <form action="processaCadastro.php" method="POST" class="w3-container w3-padding-16">
+                <!-- Nome Completo -->
+                <div class="w3-margin-bottom">
+                    <label for="nome_colab1" class="w3-text-teal"><b>Nome Completo</b></label>
+                    <input id="nome_colab1" name="nome_colab1" type="text" class="w3-input w3-border w3-round" required>
+                </div>
+                
+                <!-- Idade -->
+                <div class="w3-margin-bottom">
+                    <label for="idade_colab2" class="w3-text-teal"><b>Idade</b></label>
+                    <input id="idade_colab2" name="idade_colab2" type="number" min="14" class="w3-input w3-border w3-round" required>
+                </div>
+                
+                <!-- Profissão -->
+                <div class="w3-margin-bottom">
+                    <label for="prof_colab3" class="w3-text-teal"><b>Profissão</b></label>
+                    <input id="prof_colab3" name="prof_colab3" type="text" class="w3-input w3-border w3-round" required>
+                </div>
+                
+                <!-- Salário Pretendido -->
+                <div class="w3-margin-bottom">
+                    <label for="sal_colab4" class="w3-text-teal"><b>Salário Pretendido (R$)</b></label>
+                    <input id="sal_colab4" name="sal_colab4" type="number" step="0.01" min="0" class="w3-input w3-border w3-round" required>
+                </div>
+                
+                <!-- Experiência Anterior -->
+                <div class="w3-margin-bottom">
+                    <label for="exp_colab5" class="w3-text-teal"><b>Experiência Anterior</b></label>
+                    <textarea id="exp_colab5" name="exp_colab5" class="w3-input w3-border w3-round" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="w3-btn w3-teal w3-round w3-block custom-btn">Enviar Cadastro</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

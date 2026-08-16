@@ -1,0 +1,36 @@
+/* style.css */
+/* Reset de margens e definição tipográfica para legibilidade */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container flexível responsivo, mantendo o formulário centralizado */
+.form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* UI refinada do Card (sobrepondo padrão w3-card para bordas arredondadas e sombra suave) */
+.form-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12) !important;
+}
+
+/* Feedback visual e micro-interação no botão */
+.custom-btn {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.custom-btn:hover {
+    background-color: #00796b !important; /* Tom mais escuro de teal (WCAG compliance) */
+    transform: translateY(-2px);
+}
